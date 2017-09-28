@@ -6,6 +6,7 @@ using DoozyUI;
 
 public class Spot : MonoBehaviour, IPointerClickHandler
 {
+    //test
     public static GameObject parent;
     public void OnPointerClick(PointerEventData eventData)
     {

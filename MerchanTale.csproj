@@ -116,7 +116,9 @@
     <Compile Include="Assets\_Scripts\Managers\SceneLoader.cs" />
     <Compile Include="Assets\_Scripts\Managers\TimeManager.cs" />
     <Compile Include="Assets\_Scripts\Plant.cs" />
+    <Compile Include="Assets\_Scripts\SaveLoad.cs" />
     <Compile Include="Assets\_Scripts\Spot.cs" />
+    <Compile Include="Assets\_Scripts\UIUpdater.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenTextMeshPro.cs" />
     <Compile Include="Assets\DoozyUI\Examples\Shared\Scripts\ButtonPresetToText.cs" />
@@ -169,6 +171,11 @@
     <Compile Include="Assets\Easy Save 2\Examples\Shared Assets\Scripts\MyExampleScript.cs" />
     <Compile Include="Assets\Easy Save 2\Examples\Upload and Download a Texture\UploadDownloadTexture.cs" />
     <Compile Include="Assets\Easy Save 2\Types\ES2_AudioClip.cs" />
+    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_Plant.cs" />
+    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_UnityEngineAnimator.cs" />
+    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_UnityEngineParticleSystem.cs" />
+    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_UnityEngineParticleSystemRenderer.cs" />
+    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_UnityEngineSpriteRenderer.cs" />
     <Compile Include="Assets\PickPlantOver.cs" />
     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01.cs" />
