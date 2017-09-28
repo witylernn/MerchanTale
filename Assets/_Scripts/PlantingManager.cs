@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DoozyUI;
 
 public class PlantingManager : MonoBehaviour
 {
@@ -48,7 +49,7 @@ public class PlantingManager : MonoBehaviour
         }
         if (InventoryManager.CheckPoorness(plantType * 5))
         {
-            print("broke idiot");
+            UIManager.ShowNotification("Notif1", -1, false, "Uh-oh!", "It looks like your pocket is a little light. Get some more money and come back!");
             plantList.Remove(flower);
             DestroyObject(flower);
         }

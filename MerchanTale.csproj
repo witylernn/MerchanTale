@@ -111,13 +111,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Scripts\Managers\InventoryManager.cs" />
-    <Compile Include="Assets\_Scripts\Managers\PlantingManager.cs" />
-    <Compile Include="Assets\_Scripts\Managers\SceneLoader.cs" />
-    <Compile Include="Assets\_Scripts\Managers\TimeManager.cs" />
+    <Compile Include="Assets\_Scripts\InventoryManager.cs" />
     <Compile Include="Assets\_Scripts\Plant.cs" />
+    <Compile Include="Assets\_Scripts\PlantingManager.cs" />
     <Compile Include="Assets\_Scripts\SaveLoad.cs" />
+    <Compile Include="Assets\_Scripts\SceneLoader.cs" />
     <Compile Include="Assets\_Scripts\Spot.cs" />
+    <Compile Include="Assets\_Scripts\TimeManager.cs" />
     <Compile Include="Assets\_Scripts\UIUpdater.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenTextMeshPro.cs" />

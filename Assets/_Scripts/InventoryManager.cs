@@ -5,6 +5,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public List<Vector2> inventory;
+    public UIUpdater UIUpdater;
 
     public void InventoryAdd(int amount, int item, bool add)
     {
@@ -29,6 +30,10 @@ public class InventoryManager : MonoBehaviour
                 {
                     inventory.Add(new Vector2(item, amount));
                 }
+                if (item == 0)
+                {
+                    UIUpdater.GoldChange(amount, true);
+                }
                 break;
 
             case false:
@@ -45,6 +50,9 @@ public class InventoryManager : MonoBehaviour
                         else
                         {
                             inventory[i] = new Vector2(inventory[i].x, inventory[i].y - amount);
+                            if (inventory[i].x == 0)
+                            {
+                            }
                         }
                     }
                     else
@@ -52,9 +60,9 @@ public class InventoryManager : MonoBehaviour
                         print("Not!");
                     }
                 }
-                if (!exists)
+                if (item == 0)
                 {
-                    inventory.Add(new Vector2(item, amount));
+                    UIUpdater.GoldChange(amount, false);
                 }
                 break;
         }

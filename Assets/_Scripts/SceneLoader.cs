@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public SaveLoad SaveLoad;
     string lastLoaded;
     public void SceneSwitch(string sceneName)
     {
@@ -37,6 +38,7 @@ public class SceneLoader : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         lastLoaded = scene.name;
+        //SaveLoad.Save();
     }
 
     private void OnEnable()
