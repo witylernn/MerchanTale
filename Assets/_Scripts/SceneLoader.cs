@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     public SaveLoad SaveLoad;
     string lastLoaded;
+
     public void SceneSwitch(string sceneName)
     {
         switch (sceneName)

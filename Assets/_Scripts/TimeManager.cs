@@ -7,6 +7,7 @@ public class TimeManager : MonoBehaviour
     public int month, day;
     public PlantingManager PlantingManager;
     public UIUpdater UIUpdater;
+
     private void Start()
     {
         UIUpdater.DateChange(month,day);

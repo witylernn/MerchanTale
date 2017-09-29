@@ -18,6 +18,7 @@ public class PlantingManager : MonoBehaviour
         instance = this;
 
     }
+
     public void Plant(int plantType)
     {
         GameObject flower = Instantiate(Resources.Load("plant")) as GameObject;
