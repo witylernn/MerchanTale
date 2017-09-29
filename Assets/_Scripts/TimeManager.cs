@@ -9,8 +9,7 @@ public class TimeManager : MonoBehaviour
     public UIUpdater UIUpdater;
     private void Start()
     {
-        month = 1;
-        day = 1;
+        UIUpdater.DateChange(month,day);
     }
 
     public void ProgressDay()

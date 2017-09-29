@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DoozyUI;
 
 public class UIUpdater : MonoBehaviour
 {
     public TextMeshProUGUI date, gold;
     public InventoryManager InventoryManager;
+    public UIElement Pause;
 
     private void Start()
     {
@@ -36,5 +38,20 @@ public class UIUpdater : MonoBehaviour
             gold.text = value.ToString();
         }
         print(value);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (Pause.isVisible)
+            {
+                Pause.Hide(false);
+            }
+            else
+            {
+                Pause.Show(false);
+            }
+        }
     }
 }

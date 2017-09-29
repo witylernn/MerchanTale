@@ -32,6 +32,7 @@ public class SaveLoad : MonoBehaviour
         using(ES2Reader reader = ES2Reader.Create("Save.imp"))
         {
             TimeManager.month = reader.Read<int>();
+            print(TimeManager.month);
             TimeManager.day = reader.Read<int>();
         }
 

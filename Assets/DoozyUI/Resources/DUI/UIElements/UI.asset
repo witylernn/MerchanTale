@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: UI
   m_EditorClassIdentifier: 
   data:
+  - HUD
   - Map
   - PlantPicker
-  - HUD
+  - Pause
