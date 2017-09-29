@@ -2164,6 +2164,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   month: 0
   day: 0
+  PlantingManager: {fileID: 244907124}
+  UIUpdater: {fileID: 244907126}
 --- !u!1 &251449613
 GameObject:
   m_ObjectHideFlags: 0

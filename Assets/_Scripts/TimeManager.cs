@@ -5,12 +5,12 @@ using UnityEngine;
 public class TimeManager : MonoBehaviour
 {
     public int month, day;
-    PlantingManager PlantingManager;
+    public PlantingManager PlantingManager;
+    public UIUpdater UIUpdater;
     private void Start()
     {
         month = 1;
         day = 1;
-        PlantingManager = GetComponent<PlantingManager>();
     }
 
     public void ProgressDay()
@@ -22,6 +22,8 @@ public class TimeManager : MonoBehaviour
             {
                 month++;
                 day = 1;
+                PlantingManager.AgePlants();
+                UIUpdater.DateChange(month, day);
                 return;
             }
         }
@@ -37,6 +39,8 @@ public class TimeManager : MonoBehaviour
                 }
                 month++;
                 day = 1;
+                PlantingManager.AgePlants();
+                UIUpdater.DateChange(month, day);
                 return;
             }
 
@@ -47,11 +51,14 @@ public class TimeManager : MonoBehaviour
             {
                 month++;
                 day = 1;
+                PlantingManager.AgePlants();
+                UIUpdater.DateChange(month, day);
                 return;
             }
         }
         day++;
         PlantingManager.AgePlants();
+        UIUpdater.DateChange(month, day);
     }
 
 

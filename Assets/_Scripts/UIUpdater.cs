@@ -14,9 +14,9 @@ public class UIUpdater : MonoBehaviour
         gold.text = value.ToString();
     }
 
-    public void DateChange()
+    public void DateChange(int month, int day)
     {
-
+        date.text = month.ToString() + "/" + day.ToString();
     }
 
     public void GoldChange(int increment, bool add)
