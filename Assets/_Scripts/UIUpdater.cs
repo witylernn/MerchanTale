@@ -47,64 +47,67 @@ public class UIUpdater : MonoBehaviour
 
     public void InvUpdate()
     {
-        foreach(Transform child in row1.transform)
+        foreach(Vector2 item in InventoryManager.inventory)
         {
-            Image sp = child.GetComponent<Image>();
-
-            if (sp.sprite == null)
+            if (!SpriteCheck(Mathf.RoundToInt(item.x)))
             {
-                foreach(Vector2 item in InventoryManager.inventory)
+                foreach(Transform child in row1.transform)
                 {
-                    int itemInt = Mathf.RoundToInt(item.x);
-                    if (item.x != 0)
+                    if (child.GetComponent<Image>().sprite == null)
                     {
-                        print(itemInt);
-                        foreach(Transform child1 in row1.transform)
+                        switch (Mathf.RoundToInt(item.x))
                         {
-                            Image sp1 = child1.GetComponent<Image>();
+                            case 1:
+                                child.GetComponent<Image>().sprite = item1;
+                                break;
 
-                            switch (itemInt)
-                            {
-                                case 1:
-                                    if (sp1.sprite == item1)
-                                    {
-                                        print("exists");
-                                        return;
-                                    }
-                                    break;
+                            case 2:
+                                child.GetComponent<Image>().sprite = item2;
+                                break;
 
-                                case 2:
-                                    if (sp1.sprite == item2)
-                                    {
-                                        print("exists");
-                                        return;
-                                    }
-                                    break;
-                            }
+                            case 3:
+                                child.GetComponent<Image>().sprite = item3;
+                                break;
                         }
-                        SpriteAssign(itemInt, sp);
+                        break;
                     }
                 }
             }
         }
     }
 
-    void SpriteAssign(int item, Image sp)
+    bool SpriteCheck(int item)
     {
+        Sprite spriteToCheck = null;
+        Image spot;
         switch (item)
         {
+            
             case 1:
-                sp.sprite = item1;
+                spriteToCheck = item1;
                 break;
 
             case 2:
-                sp.sprite = item2;
+                spriteToCheck = item2;
                 break;
 
             case 3:
-                sp.sprite = item3;
+                spriteToCheck = item3;
                 break;
+
         }
+
+        foreach(Transform child in row1.transform)
+        {
+            spot = child.GetComponent<Image>();
+            if(spot.sprite == spriteToCheck)
+            {
+                return true;
+            }
+
+        }
+        print("test");
+        return false;
     }
 
     private void Update()
