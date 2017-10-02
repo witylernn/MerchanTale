@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="kNt4okS2dHU8jtB7sKdieSgQrN9XhopI15FCnijacjQ/SiF6xWf4q/bpa5ftsq2/ykbtnxkD+Wcy4i6eRuCFwg==" />
+  <title>Unity - Activation</title>
+
+  <link rel="shortcut icon" href="/assets/favicons/favicon-f06565f76d7bd24dfa746bd0ba938014e1b7a4a2605b050b96fe7409f51b29e2.ico" />
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon-ee97c5d15978f4ff16d358db6d79cb514fb504d67eae207dafbaecc0d6e9d32a.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152-32fc297a8ce1d6ce50b6e8cfed1babb882293ad9fe22570419c850d1f3391742.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144-aae69a9d0f356bb7bdf72aac254907f37b1a74f0128e8fb211ddc778fd8f5381.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120-16f92956654b0c3cf0d011471ad65a329d78912b60a472b619cc24e9dcad1add.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114-b9dda49cb95dc6c185608822562abc5a836a7fdeced91ead4c674ff8fd28e9f3.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72-eb12061dbb4df91644d02af296b46016dc4d44d1d87e34faaaf1937524274b56.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/favicons/apple-touch-icon-27e98b2f0af4735f28d4bd86505d256eee3aac0ce5eefacf14eb5e157172a0d6.png">
+  <meta name="msapplication-TileColor" content="#222c37">
+  <meta name="msapplication-TileImage" content="/assets/favicons/tileicon-144x144-737d7711aaf107bb8ad82f5f5ccd7c03f577ccec2887ea0095e085651d051a60.png">
+
+  <script src="/assets/application-88ae93267dc7ba2ef8093dd04fc10e06ee98a43c5befc89052c148e76e6f70d9.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" media="screen" href="/assets/application-f3ffe2fba925a5a437b024fc01b896092edd40d533f0cdceeef0fc31ccdb8c87.css" />
+
+  
+</head>
+<body class="">
+<div class="master-wrapper clear">
+  <header class="main">
+    <div class="wrap clear">
+      <div class="logo"></div>
+      <div class="progress steps4">
+    <div class="step completed"><div class="dot"></div>Sign in</div>  
+    <div class="step completed"><div class="dot"></div>License</div>  
+    <div class="step active"><div class="dot"></div>Start Unity</div>  
+</div>
+    </div>
+    <div class="loading hide"></div>
+  </header>
+  <section class="content clear">
+    
+    <div class="g9">
+  <h1>Failed to begin license download</h1>
+  <p>We're sorry! It looks like the license file has already been downloaded. Maybe something have gone wrong during the activation process:</p>
+
+  <ul class="l">
+    <li><a href="/manual">Restart</a> the manual activation flow.</li>
+    <li>Contact our helpful <a href="mailto:support@unity3d.com?subject=License+manual+activation+download+error">support</a> team.</li>
+  </ul>
+</div>
+
+  </section>
+  <footer class="clear">
+    <div class="wrap clear">
+      <p>Copyright &copy; 2017 Unity Technologies</p>
+      <ul>
+        
+        <li><a href="http://unity3d.com/unity/faq/2491" target="_blank">FAQ</a></li>
+        <li><a href="http://unity3d.com/unity/activation" target="_blank">Help</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

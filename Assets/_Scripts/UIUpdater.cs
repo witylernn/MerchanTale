@@ -1,15 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using DoozyUI;
 using TMPro;
-using DoozyUI;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class UIUpdater : MonoBehaviour
 {
     public TextMeshProUGUI date, gold;
     public InventoryManager InventoryManager;
-    public UIElement Pause;
+    public UIElement Pause, Inventory;
     public GameObject row1, row2, row3;
     public Sprite item1, item2, item3;
 
@@ -17,8 +15,6 @@ public class UIUpdater : MonoBehaviour
     {
         float value = InventoryManager.inventory[0].y;
         gold.text = value.ToString();
-
-        InvUpdate();
     }
 
     public void DateChange(int month, int day)
@@ -59,19 +55,27 @@ public class UIUpdater : MonoBehaviour
                         {
                             case 1:
                                 child.GetComponent<Image>().sprite = item1;
+                                child.GetComponentInChildren<TextMeshProUGUI>().text = "x" + item.y.ToString();
                                 break;
 
                             case 2:
                                 child.GetComponent<Image>().sprite = item2;
+                                child.GetComponentInChildren<TextMeshProUGUI>().text = "x" + item.y.ToString();
                                 break;
 
                             case 3:
                                 child.GetComponent<Image>().sprite = item3;
+                                child.GetComponentInChildren<TextMeshProUGUI>().text = "x" + item.y.ToString();
                                 break;
                         }
+                        print(item.y);
                         break;
                     }
                 }
+            }
+            else
+            {
+                
             }
         }
     }
@@ -102,11 +106,14 @@ public class UIUpdater : MonoBehaviour
             spot = child.GetComponent<Image>();
             if(spot.sprite == spriteToCheck)
             {
+                if(item != 0)
+                {
+                    child.GetComponentInChildren<TextMeshProUGUI>().text = "x" + InventoryManager.inventory[item].y.ToString();
+                }
                 return true;
             }
 
         }
-        print("test");
         return false;
     }
 
@@ -122,6 +129,18 @@ public class UIUpdater : MonoBehaviour
             {
                 Pause.Show(false);
             }
+        }
+    }
+
+    public void InvButton()
+    {
+        if (Inventory.isVisible)
+        {
+            Inventory.Hide(false);
+        }
+        else
+        {
+            Inventory.Show(false);
         }
     }
 }

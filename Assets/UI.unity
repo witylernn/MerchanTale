@@ -1933,7 +1933,7 @@ Canvas:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 148596881}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -2892,7 +2892,7 @@ Canvas:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 214935135}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -3222,6 +3222,7 @@ MonoBehaviour:
   gold: {fileID: 1574574796}
   InventoryManager: {fileID: 244907121}
   Pause: {fileID: 1354642746}
+  Inventory: {fileID: 761572314}
   row1: {fileID: 137095255}
   row2: {fileID: 920642271}
   row3: {fileID: 412209413}
@@ -9078,7 +9079,7 @@ MonoBehaviour:
   elementName: Inventory
   LANDSCAPE: 1
   PORTRAIT: 1
-  startHidden: 0
+  startHidden: 1
   animateAtStart: 0
   disableWhenHidden: 0
   autoHide: 0
@@ -9160,10 +9161,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  inAnimationsPresetCategoryName: Uncategorized
-  inAnimationsPresetName: DefaultPreset
-  loadInAnimationsPresetAtRuntime: 0
-  inAnimationsSoundAtStart: ~No Sound~
+  inAnimationsPresetCategoryName: Fade
+  inAnimationsPresetName: SoftGrow
+  loadInAnimationsPresetAtRuntime: 1
+  inAnimationsSoundAtStart: Woosh 1
   customInAnimationsSoundAtStart: 0
   inAnimationsSoundAtFinish: ~No Sound~
   customInAnimationsSoundAtFinish: 0
@@ -9237,10 +9238,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  outAnimationsPresetCategoryName: Uncategorized
-  outAnimationsPresetName: DefaultPreset
-  loadOutAnimationsPresetAtRuntime: 0
-  outAnimationsSoundAtStart: ~No Sound~
+  outAnimationsPresetCategoryName: Fade
+  outAnimationsPresetName: SoftShrink
+  loadOutAnimationsPresetAtRuntime: 1
+  outAnimationsSoundAtStart: Woosh 2
   customOutAnimationsSoundAtStart: 0
   outAnimationsSoundAtFinish: ~No Sound~
   customOutAnimationsSoundAtFinish: 0
@@ -9344,7 +9345,7 @@ Canvas:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 761572312}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -15329,8 +15330,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  inAnimationsPresetCategoryName: Fade
-  inAnimationsPresetName: ShrinkIn
+  inAnimationsPresetCategoryName: Drop
+  inAnimationsPresetName: OnLeftCorner
   loadInAnimationsPresetAtRuntime: 1
   inAnimationsSoundAtStart: ~No Sound~
   customInAnimationsSoundAtStart: 0
@@ -15406,8 +15407,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  outAnimationsPresetCategoryName: Fade
-  outAnimationsPresetName: GrowOut
+  outAnimationsPresetCategoryName: Drop
+  outAnimationsPresetName: OnRightCorner
   loadOutAnimationsPresetAtRuntime: 1
   outAnimationsSoundAtStart: ~No Sound~
   customOutAnimationsSoundAtStart: 0
@@ -19365,7 +19366,29 @@ MonoBehaviour:
   customOnClickSound: 0
   OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 244907126}
+        m_MethodName: InvUpdate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 244907126}
+        m_MethodName: InvButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   onClickPunchPresetCategory: Uncategorized
@@ -19396,7 +19419,9 @@ MonoBehaviour:
   onClickGameEvents: []
   onClickNavigation:
     addToNavigationHistory: 0
-    show: []
+    show:
+    - category: Uncategorized
+      name: ~Element Name~
     hide: []
   useOnDoubleClick: 0
   waitForOnDoubleClickAnimation: 1
