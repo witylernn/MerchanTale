@@ -163,6 +163,15 @@
     <Reference Include="TextMeshPro-1.0.55.2017.1.0b12-Editor">
       <HintPath>Assets\TextMesh Pro\Plugins\Editor\TextMeshPro-1.0.55.2017.1.0b12-Editor.dll</HintPath>
     </Reference>
+    <Reference Include="DialogueSystemEditors">
+      <HintPath>Assets\Dialogue System\DLLs\Editor\DialogueSystemEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="DialogueSystem">
+      <HintPath>Assets\Dialogue System\DLLs\DialogueSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="LuaInterpreter">
+      <HintPath>Assets\Dialogue System\DLLs\LuaInterpreter.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-UnityScript">
       <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
     </Reference>
@@ -178,6 +187,23 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\AddES3Prefab.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\AutoSaveWindow.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3AutoSaveEditor.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3AutoSaveMgrEditor.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3EditorStyle.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3EditorUtility.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3InspectorInfoEditor.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3PlayMakerEditor.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3Postprocessor.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3PrefabEditor.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3ReferenceMgrEditor.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3SettingsEditor.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3Window.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\HomeWindow.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\SettingsWindow.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\ToolsWindow.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Editor\TypesWindow.cs" />
     <Compile Include="Assets\Plugins\Quick\Editor\Classes\QColor.cs" />
     <Compile Include="Assets\Plugins\Quick\Editor\Classes\QColors.cs" />
     <Compile Include="Assets\Plugins\Quick\Editor\Classes\QEditor.cs" />
@@ -206,9 +232,69 @@
     <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
     <None Include="Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
     <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
+    <None Include="Assets\Dialogue System\DLLs\_README.txt" />
+    <None Include="Assets\Dialogue System\Documentation\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Art\Portraits\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Art\Sounds\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Art\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Bark Example\Bark Conversation\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Bark Example\Bark Example.xml" />
+    <None Include="Assets\Dialogue System\Examples\Bark Example\Three NPCs Bark\Three NPCs Bark.xml" />
+    <None Include="Assets\Dialogue System\Examples\Bark Example\Three NPCs Bark\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Bark Example\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Camera Angle Studio\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Feature Demo\Articy Feature Demo\Articy Feature Demo.xml" />
+    <None Include="Assets\Dialogue System\Examples\Feature Demo\Dialogue Database\Feature Demo.xml" />
+    <None Include="Assets\Dialogue System\Examples\Feature Demo\Feature Demo with Continue Button\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Feature Demo\Menu Text Demo\Feature Demo With Menu Text.xml" />
+    <None Include="Assets\Dialogue System\Examples\Feature Demo\Menu Text Demo\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Feature Demo\Multiple Database Example\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Feature Demo\Text Input Example\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Feature Demo\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Lua Example\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Mobile Test\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Quest Example\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Quick Start\Quick Start.xml" />
+    <None Include="Assets\Dialogue System\Examples\Quick Start\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Save Load Example\_README_FIRST_IMPORTANT!.txt" />
+    <None Include="Assets\Dialogue System\Examples\Sequence Example\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\Unity UI Examples\Animated Portrait Example\Private Hart Animated Portrait\sprites_credits.txt" />
+    <None Include="Assets\Dialogue System\Examples\Unity UI Examples\_README.txt" />
+    <None Include="Assets\Dialogue System\Examples\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\Circle\Textures\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\Computer\Bitwise Font\!license.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\Computer\Typing.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\Necromancer\Necromancer GUI\Kingthings.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\Necromancer\Necromancer GUI\Readme.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\Necromancer\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\Shared Audio\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\Shared Fonts\Orbitron\SIL Open Font License.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\Shared Textures\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\Wheel\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Legacy Unity GUI Prefabs\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Unity UI Prefabs\Mobile\_IMPORTANT_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Unity UI Prefabs\Speech Bubble\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Unity UI Prefabs\Unity UI Assets\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\Unity UI Prefabs\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\iOS\_README.txt" />
+    <None Include="Assets\Dialogue System\Prefabs\iOS\link.xml" />
+    <None Include="Assets\Dialogue System\Scripts\Shaders\LinesColoredBlended.shader" />
+    <None Include="Assets\Dialogue System\Scripts\Supplemental\UI\_README.txt" />
+    <None Include="Assets\Dialogue System\Scripts\Supplemental\Utility\_README.txt" />
+    <None Include="Assets\Dialogue System\Scripts\_README.txt" />
+    <None Include="Assets\Dialogue System\Third Party Support\_README.txt" />
+    <None Include="Assets\Dialogue System\_README.txt" />
     <None Include="Assets\DoozyUI\Readme.txt" />
     <None Include="Assets\Easy Save 2\changelog.txt" />
     <None Include="Assets\Easy Save 2\readme.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ClassTypeTemplate.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ComponentTypeTemplate.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\Editor\ES3TypeTemplate.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\Editor\ES3Type_MaterialTemplate.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ValueTypeTemplate.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\link.xml" />
+    <None Include="Assets\Sprites-Outline.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

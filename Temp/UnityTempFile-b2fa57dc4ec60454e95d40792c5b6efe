@@ -1,0 +1,277 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp\Assembly-CSharp-firstpass.dll
+-unsafe
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:Assets/Demigiant/DemiLib/Core/DemiLib.dll
+-r:Assets/Demigiant/DOTween/DOTween.dll
+-r:Assets/Demigiant/DOTween/DOTween43.dll
+-r:Assets/Demigiant/DOTween/DOTween46.dll
+-r:Assets/Demigiant/DOTween/DOTween50.dll
+-r:Assets/Demigiant/DOTweenPro/DOTweenPro.dll
+-r:"Assets/Dialogue System/DLLs/DialogueSystem.dll"
+-r:"Assets/Dialogue System/DLLs/LuaInterpreter.dll"
+-r:Assets/Plugins/ES2.dll
+-r:Assets/Plugins/MoodkieSecurity.dll
+-r:"Assets/TextMesh Pro/Plugins/TextMeshPro-1.0.55.2017.1.0b12.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_1_1
+-define:UNITY_2017_1
+-define:UNITY_2017
+-define:PLATFORM_ARCH_64
+-define:UNITY_64
+-define:UNITY_ANALYTICS
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_GENERICS
+-define:ENABLE_PVR_GI
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_RUNTIME_NAVMESH_BUILDING
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_DIRECTOR
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_TIMELINE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:ENABLE_NATIVE_ARRAY
+-define:ENABLE_SPRITE_MASKING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:ENABLE_MONO_BDWGC
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_VIDEO
+-define:ENABLE_RMGUI
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_STYLE_SHEETS
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VR
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:NET_2_0_SUBSET
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:ENABLE_NATIVE_ARRAY_CHECKS
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+-define:UNITY_PRO_LICENSE
+-define:dUI_DoozyUI
+-define:DOTWEEN_TMP
+"Assets/Plugins/Easy Save 2/ES2Init.cs"
+"Assets/Plugins/Easy Save 2/Types/ES2_Sprite.cs"
+"Assets/Plugins/Easy Save 3/PlayMaker/ES3PlayMaker.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Auto Save/ES3AutoSave.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Auto Save/ES3AutoSaveMgr.cs"
+"Assets/Plugins/Easy Save 3/Scripts/ES3.cs"
+"Assets/Plugins/Easy Save 3/Scripts/ES3Crypto.cs"
+"Assets/Plugins/Easy Save 3/Scripts/ES3File.cs"
+"Assets/Plugins/Easy Save 3/Scripts/ES3InspectorInfo.cs"
+"Assets/Plugins/Easy Save 3/Scripts/ES3IO.cs"
+"Assets/Plugins/Easy Save 3/Scripts/ES3Prefab.cs"
+"Assets/Plugins/Easy Save 3/Scripts/ES3ReferenceMgrBase.cs"
+"Assets/Plugins/Easy Save 3/Scripts/ES3Reflection.cs"
+"Assets/Plugins/Easy Save 3/Scripts/ES3SerializableDictionary.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Readers/ES3JSONReader.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Readers/ES3Reader.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Settings/ES3DefaultSettings.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Settings/ES3Settings.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Streams/ES3FileStream.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Streams/ES3PlayerPrefsStream.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Streams/ES3ResourcesStream.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Streams/ES3Stream.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES32DArrayType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES33DArrayType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3ArrayType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3CollectionType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3DictionaryType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3ListType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3QueueType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3StackType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/ES3ComponentType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/ES3ObjectType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/ES3Property.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/ES3ScriptableObjectType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/ES3Type.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/ES3TypeMgr.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/ES3UnityObjectType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_bool.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_byte.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_byteArray.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_char.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_DateTime.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_decimal.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_double.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_enum.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_float.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_int.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_intptr.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_long.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_sbyte.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_short.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_string.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_uint.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_UIntPtr.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_ulong.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_ushort.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedComponentType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedObjectType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedScriptableObjectType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedUnityObjectType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Reflected Types/ES3ReflectedValueType.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_BoxCollider.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_BoxCollider2D.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Camera.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_CapsuleCollider.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_EventSystem.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_MeshCollider.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_MeshFilter.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_MeshRenderer.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_ParticleSystem.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_PolygonCollider2D.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_SphereCollider.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Text.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Transform.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_AnimationCurve.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_AudioClip.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_BoneWeight.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Bounds.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_CollisionModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Color.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Color32.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ColorBySpeedModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ColorOverLifetimeModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_EmissionModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ExternalForcesModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Flare.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Font.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ForceOverLifetimeModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_GameObject.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Gradient.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_GradientAlphaKey.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_GradientColorKey.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_InheritVelocityModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Keyframe.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LayerMask.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Light.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LightsModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LimitVelocityOverLifetimeModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_MainModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Material.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Matrix4x4.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Mesh.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_MinMaxCurve.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_MinMaxGradient.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_NoiseModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_PhysicMaterial.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_PhysicsMaterial2D.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Quaternion.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Rect.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RectTransform.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RotationBySpeedModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_RotationOverLifetimeModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Shader.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_ShapeModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SizeBySpeedModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SizeOverLifetimeModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SkinnedMeshRenderer.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Sprite.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SpriteRenderer.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_SubEmittersModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Texture2D.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_TextureSheetAnimationModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_TrailModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_TriggerModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector2.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector3.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Vector4.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_VelocityOverLifetimeModule.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Web/ES3Cloud.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Web/ES3WebClass.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Writers/ES3JSONWriter.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Writers/ES3Writer.cs"
+"Assets/Plugins/Easy Save 3/Scripts/Writers/ES3XMLWriter.cs"
+Assets/Plugins/Quick/Engine/Classes/QColor.cs
+Assets/Plugins/Quick/Engine/Classes/QColors.cs
+Assets/Plugins/Quick/Engine/Classes/QResources.cs
+Assets/Plugins/Quick/Engine/Common/Singleton.cs
+Assets/Plugins/Quick/Engine/Extensions/ArrayAndListExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/AudioExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/BoolExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/CameraExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/ColorExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/DateTimeExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/DictionaryExtenstions.cs
+Assets/Plugins/Quick/Engine/Extensions/FloatExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/IListExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/RectTransformExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/StringExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/TransformExtensions.cs
+Assets/Plugins/Quick/Engine/Extensions/VectorExtensions.cs
+Assets/Plugins/Quick/Engine/IO/File.cs
+Assets/Plugins/Quick/Engine/Utils/QAssets.cs
+Assets/Plugins/Quick/Engine/Utils/QEmailValidator.cs
+Assets/Plugins/Quick/Engine/Utils/QIPValidator.cs
+Assets/Plugins/Quick/Engine/Utils/QReflection.cs
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity

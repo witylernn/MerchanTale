@@ -33,7 +33,8 @@ public class SceneLoader : MonoBehaviour
                 }
                 break;
         }
-        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        //SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)

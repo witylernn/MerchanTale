@@ -6,6 +6,7 @@ using UnityEngine;
 public class SaveLoad : MonoBehaviour
 {
     public InventoryManager InventoryManager;
+    public PlantingManager PlantingManager;
     public TimeManager TimeManager;
     public UIUpdater UIUpdater;
 
@@ -22,8 +23,8 @@ public class SaveLoad : MonoBehaviour
 
             writer.Save(false);
         }
-
         ES2.Save(InventoryManager.inventory, "SaveInv.imp");
+        ES3.Save<GameObject>("test", PlantingManager.plantList[0]);
     }
 
     public void Load()
@@ -36,6 +37,7 @@ public class SaveLoad : MonoBehaviour
         }
 
         InventoryManager.inventory = ES2.LoadList<Vector2>("SaveInv.imp");
+        ES3.Load<GameObject>("test");
 
     }
 }

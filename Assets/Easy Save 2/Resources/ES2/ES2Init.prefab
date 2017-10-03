@@ -56,7 +56,7 @@ MonoBehaviour:
   optimizeMode: 0
   PCDataPath: 
   MacDataPath: 
-  encrypt: 1
+  encrypt: 0
   encryptionPassword: f2WYP35djvxP2pdR
   encryptionType: 0
   webUsername: ES2

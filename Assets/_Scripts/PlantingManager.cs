@@ -6,7 +6,7 @@ using DoozyUI;
 public class PlantingManager : MonoBehaviour
 {
     public Sprite plant1, plant2, plant3;
-    public List<GameObject> plantList;
+    public static List<GameObject> plantList;
     public Color color1, color2, color3;
     public InventoryManager InventoryManager;
     public static PlantingManager instance;

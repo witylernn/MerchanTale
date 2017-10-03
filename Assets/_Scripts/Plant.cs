@@ -2,9 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[System.Serializable]
 public class Plant : MonoBehaviour
 {
     public int life, plantType;
-	// Use this for initialization
+    // Use this for initialization
 
+    private void Start()
+    {
+        print(life);
+        if (PlantingManager.plantList.Contains(this.gameObject))
+        {
+            print("do nothing");
+        }
+        else
+        {
+            PlantingManager.plantList.Add(this.gameObject);
+        }
+    }
 }
