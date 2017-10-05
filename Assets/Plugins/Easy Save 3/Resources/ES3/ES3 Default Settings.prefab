@@ -53,9 +53,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     _location: 0
-    path: SaveData.es3
-    encryptionType: 0
-    encryptionPassword: password
+    path: plantData.imp
+    encryptionType: 1
+    encryptionPassword: DanielIsGay0627!
     directory: 0
     format: 0
     bufferSize: 2048
@@ -67,4 +67,4 @@ MonoBehaviour:
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
     showAdvancedSettings: 0
-  addMgrToSceneAutomatically: 1
+  addMgrToSceneAutomatically: 0

@@ -94,6 +94,12 @@
     <Reference Include="DOTweenPro">
       <HintPath>Assets\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
+    <Reference Include="DialogueSystem">
+      <HintPath>Assets\Dialogue System\DLLs\DialogueSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="LuaInterpreter">
+      <HintPath>Assets\Dialogue System\DLLs\LuaInterpreter.dll</HintPath>
+    </Reference>
     <Reference Include="ES2">
       <HintPath>Assets\Plugins\ES2.dll</HintPath>
     </Reference>
@@ -102,12 +108,6 @@
     </Reference>
     <Reference Include="TextMeshPro-1.0.55.2017.1.0b12">
       <HintPath>Assets\TextMesh Pro\Plugins\TextMeshPro-1.0.55.2017.1.0b12.dll</HintPath>
-    </Reference>
-    <Reference Include="DialogueSystem">
-      <HintPath>Assets\Dialogue System\DLLs\DialogueSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="LuaInterpreter">
-      <HintPath>Assets\Dialogue System\DLLs\LuaInterpreter.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -122,8 +122,11 @@
     <Compile Include="Assets\_Scripts\InventoryManager.cs" />
     <Compile Include="Assets\_Scripts\Plant.cs" />
     <Compile Include="Assets\_Scripts\PlantingManager.cs" />
+    <Compile Include="Assets\_Scripts\Quests\FirstFlowers.cs" />
     <Compile Include="Assets\_Scripts\SaveLoad.cs" />
     <Compile Include="Assets\_Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\_Scripts\Shop.cs" />
+    <Compile Include="Assets\_Scripts\ShopScene.cs" />
     <Compile Include="Assets\_Scripts\Spot.cs" />
     <Compile Include="Assets\_Scripts\SpriteOutline.cs" />
     <Compile Include="Assets\_Scripts\TimeManager.cs" />
@@ -275,14 +278,6 @@
     <Compile Include="Assets\Easy Save 2\Examples\Shared Assets\Scripts\MyExampleScript.cs" />
     <Compile Include="Assets\Easy Save 2\Examples\Upload and Download a Texture\UploadDownloadTexture.cs" />
     <Compile Include="Assets\Easy Save 2\Types\ES2_AudioClip.cs" />
-    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_Plant.cs" />
-    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_Spot.cs" />
-    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_UnityEngineAnimator.cs" />
-    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_UnityEngineBoxCollider2D.cs" />
-    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_UnityEngineGameObject.cs" />
-    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_UnityEngineParticleSystem.cs" />
-    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_UnityEngineParticleSystemRenderer.cs" />
-    <Compile Include="Assets\Easy Save 2\Types\ES2UserType_UnityEngineSpriteRenderer.cs" />
     <Compile Include="Assets\PickPlantOver.cs" />
     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01.cs" />

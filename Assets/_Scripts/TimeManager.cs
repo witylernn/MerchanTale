@@ -11,6 +11,7 @@ public class TimeManager : MonoBehaviour
     private void Start()
     {
         UIUpdater.DateChange(month,day);
+
     }
 
     public void ProgressDay()

@@ -6,12 +6,16 @@ using PixelCrushers.DialogueSystem;
 
 public class Blacksmith : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    public SpriteOutline SpriteOutline;
-    public ParticleSystem ps;
+    SpriteOutline SpriteOutline;
+    ParticleSystem ps;
+    ConversationTrigger ct;
 
     private void Start()
     {
-        
+        ct = GetComponent<ConversationTrigger>();
+        SpriteOutline = GetComponent<SpriteOutline>();
+        ps = GetComponentInChildren<ParticleSystem>();
+        ct.conversation = "Blacksmith";
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -23,13 +27,13 @@ public class Blacksmith : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     {
         StopAllCoroutines();
         SpriteOutline.outlineSize = 0;
-        print("test");
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         ps.Play();
-        DialogueManager.StartConversation("Blacksmith");
+        ct.enabled = true;
+        ct.enabled = false;
     }
 
     IEnumerator Pulse()

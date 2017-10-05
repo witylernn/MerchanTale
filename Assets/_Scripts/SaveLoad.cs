@@ -12,7 +12,7 @@ public class SaveLoad : MonoBehaviour
 
     private void Awake()
     {
-        Load();
+        //Load();
     }
     public void Save()
     {

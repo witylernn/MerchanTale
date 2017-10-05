@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212241229094515920}
   - component: {fileID: 114428361753815794}
   - component: {fileID: 95165336033025174}
-  - component: {fileID: 114948363527876798}
+  - component: {fileID: 114472080704238964}
   m_Layer: 0
   m_Name: plant
   m_TagString: Plant
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 0
   plantType: 0
---- !u!114 &114948363527876798
+--- !u!114 &114472080704238964
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab28f43d02f443298c4eceeceab1030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabId: 4261118574846719448
+  prefabId: 2057361190939614208
   localRefs:
     _Keys: []
     _Values: 

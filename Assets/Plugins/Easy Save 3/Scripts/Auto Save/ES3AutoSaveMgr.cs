@@ -42,13 +42,19 @@ public class ES3AutoSaveMgr : MonoBehaviour, ISerializationCallbackReceiver
 	void Start()
 	{
 		if(loadEvent == LoadEvent.Start)
-			Load();
+        {
+
+        }
+			//Load();
 	}
 
 	public void Awake()
 	{
 		if(loadEvent == LoadEvent.Awake)
-			Load();
+        {
+
+        }
+			//Load();
 	}
 
 	void OnApplicationQuit()
