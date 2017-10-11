@@ -1,0 +1,6 @@
+#####################################
+# CUSTOM ASSET GENERATOR DEMO GUIDE #
+#####################################
+
+- Move "Custom Asset Generator/Plugins" folder to "Assets/Plugins" folder.
+  (Special Folders and Script Compilation Order: https://docs.unity3d.com/Manual/ScriptCompileOrderFolders.html)

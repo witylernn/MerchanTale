@@ -1,0 +1,11 @@
+#######################################
+# CUSTOM ASSET GENERATOR UPDATE GUIDE #
+#######################################
+
+* Reference: https://sametkurumahmut.github.io/CustomAssetGenerator/details/#howToUpdate
+
+- Right click to the configuration asset preview icon and select "Export to update" menu to generate "CustomAssetGenerator.update.xml" file.
+- Delete Custom Asset Generator files except "CustomAssetGenerator.update.xml".
+- Import new Custom Asset Generator version.
+- Generate configuration asset by "Assets/Create/Custom Assets/Generate Config Asset" menu item path.
+- Drag "CustomAssetGenerator.update.xml" to the configuration asset and drop the version update area.

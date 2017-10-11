@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 114137480820614644}
   - component: {fileID: 114942052669698326}
   - component: {fileID: 114436537093785192}
+  - component: {fileID: 114199624200852902}
   m_Layer: 0
   m_Name: Shop
   m_TagString: Untagged
@@ -1057,6 +1058,31 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114199624200852902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1443862796484598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1936938464, guid: b5a7519e94754fb4a8ea0c272031db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  once: 1
+  trigger: 2
+  localizedTextTable: {fileID: 0}
+  message: Test
+  duration: 5
+  condition:
+    luaConditions: []
+    questConditions:
+    - questName: First Customer
+      questState: 0
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
 --- !u!114 &114306437216089140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1148,6 +1174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38739b7b5cb92dd48b8b4dd6eae50ad1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cg: {fileID: 0}
+  diag: {fileID: 0}
 --- !u!114 &114613714469877072
 MonoBehaviour:
   m_ObjectHideFlags: 1

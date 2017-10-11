@@ -109,6 +109,9 @@
     <Reference Include="TextMeshPro-1.0.55.2017.1.0b12">
       <HintPath>Assets\TextMesh Pro\Plugins\TextMeshPro-1.0.55.2017.1.0b12.dll</HintPath>
     </Reference>
+    <Reference Include="TestLibrary">
+      <HintPath>Assets\Custom Asset Generator\Demo\TestLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Plugins\Easy Save 2\ES2Init.cs" />
@@ -270,6 +273,10 @@
     <Compile Include="Assets\Plugins\Quick\Engine\Utils\QReflection.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Custom Asset Generator\CustomAssetGenerator\Editor\HOW TO UPDATE.TR.txt" />
+    <None Include="Assets\Custom Asset Generator\CustomAssetGenerator\Editor\HOW TO UPDATE.txt" />
+    <None Include="Assets\Custom Asset Generator\Demo\DEMO GUIDE.TR.txt" />
+    <None Include="Assets\Custom Asset Generator\Demo\DEMO GUIDE.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />

@@ -8,14 +8,11 @@ public class Blacksmith : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 {
     SpriteOutline SpriteOutline;
     ParticleSystem ps;
-    ConversationTrigger ct;
 
     private void Start()
     {
-        ct = GetComponent<ConversationTrigger>();
         SpriteOutline = GetComponent<SpriteOutline>();
         ps = GetComponentInChildren<ParticleSystem>();
-        ct.conversation = "Blacksmith";
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -32,8 +29,7 @@ public class Blacksmith : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public void OnPointerClick(PointerEventData eventData)
     {
         ps.Play();
-        ct.enabled = true;
-        ct.enabled = false;
+        GameObject go = Instantiate(Resources.Load("Blacksmith")) as GameObject;
     }
 
     IEnumerator Pulse()

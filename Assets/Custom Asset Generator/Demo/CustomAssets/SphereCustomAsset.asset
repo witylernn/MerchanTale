@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ff6fd0eaf5d784d82f6ffd9afe1f45, type: 3}
+  m_Name: SphereCustomAsset
+  m_EditorClassIdentifier: 
+  GO: {fileID: 153336, guid: 8bf3938a96e0c444783a80e26c6492fa, type: 2}
+  SpawnPosition: {x: 3, y: 0.5, z: -10}
+  Color: {r: 0.15686275, g: 0.7372549, b: 0.91764706, a: 0}

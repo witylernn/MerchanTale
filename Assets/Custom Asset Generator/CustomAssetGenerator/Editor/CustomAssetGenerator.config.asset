@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2088231490, guid: 5f050ca56b02165458761cc75cee5813, type: 3}
+  m_Name: CustomAssetGenerator.config
+  m_EditorClassIdentifier: 
+  AutoGenerate: 1
+  DefaultMonoBehaviourCustomEditor: 1
+  Logs: 1
+  ScriptableObjectPropertyDrawer: 1
+  SelectedToolBarTab: 0
+  AssemblyLists:
+  - IsAlphabetic: 0
+    MenuItemPath: 
+    List:
+    - Enabled: 1
+      Name: Assembly-CSharp
+  - IsAlphabetic: 1
+    MenuItemPath: Editor
+    List:
+    - Enabled: 1
+      Name: Assembly-CSharp-Editor
+    - Enabled: 1
+      Name: Assembly-UnityScript-Editor
+  - IsAlphabetic: 0
+    MenuItemPath: Firstpass
+    List:
+    - Enabled: 1
+      Name: Assembly-Boo
+  - IsAlphabetic: 0
+    MenuItemPath: User Assemblies
+    List:
+    - Enabled: 1
+      Name: TestLibrary
+    - Enabled: 1
+      Name: DOTween
+    - Enabled: 1
+      Name: DOTweenEditor
+    - Enabled: 1
+      Name: DOTweenProEditor
+    - Enabled: 1
+      Name: DialogueSystem
+    - Enabled: 1
+      Name: DialogueSystemEditors
+    - Enabled: 1
+      Name: ES2Editor
+    - Enabled: 1
+      Name: TextMeshPro-1.0.55.2017.1.0b12
+    - Enabled: 1
+      Name: TextMeshPro-1.0.55.2017.1.0b12-Editor
+  - IsAlphabetic: 0
+    MenuItemPath: Newly Added
+    List:
+    - Enabled: 1
+      Name: Assembly-CSharp-Editor-firstpass
+  TypeLists:
+  - IsAlphabetic: 0
+    MenuItemPath: 
+    List:
+    - Enabled: 1
+      AssemblyQualifiedName: CSharpCustomAsset, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      FullName: CSharpCustomAsset
+    - Enabled: 1
+      AssemblyQualifiedName: CubeCustomAsset, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      FullName: CubeCustomAsset
+    - Enabled: 1
+      AssemblyQualifiedName: SphereCustomAsset, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      FullName: SphereCustomAsset
+  - IsAlphabetic: 1
+    MenuItemPath: Editor
+    List:
+    - Enabled: 1
+      AssemblyQualifiedName: CSharpCustomAsset, Assembly-CSharp-Editor, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      FullName: CSharpCustomAsset
+    - Enabled: 1
+      AssemblyQualifiedName: CubeCustomAssetEditor, Assembly-CSharp-Editor, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      FullName: CubeCustomAssetEditor
+    - Enabled: 1
+      AssemblyQualifiedName: JSCustomAsset, Assembly-UnityScript-Editor, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      FullName: JSCustomAsset
+  - IsAlphabetic: 0
+    MenuItemPath: Firstpass
+    List:
+    - Enabled: 1
+      AssemblyQualifiedName: BooCustomAsset, Assembly-Boo, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      FullName: BooCustomAsset
+  - IsAlphabetic: 0
+    MenuItemPath: User Types
+    List:
+    - Enabled: 1
+      AssemblyQualifiedName: TestLibrary.TestCustomAsset, TestLibrary, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      FullName: TestLibrary.TestCustomAsset
+  - IsAlphabetic: 0
+    MenuItemPath: Newly Added
+    List:
+    - Enabled: 0
+      AssemblyQualifiedName: AssetStoreManager, AssetStoreTools, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      FullName: AssetStoreManager
+    - Enabled: 0
+      AssemblyQualifiedName: FileSelector, AssetStoreTools, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      FullName: FileSelector
+    - Enabled: 0
+      AssemblyQualifiedName: LabelList, AssetStoreTools, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      FullName: LabelList
+    - Enabled: 0
+      AssemblyQualifiedName: LoginWindow, AssetStoreTools, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      FullName: LoginWindow
+    - Enabled: 0
+      AssemblyQualifiedName: MassLabeler, AssetStoreTools, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      FullName: MassLabeler

@@ -1,0 +1,6 @@
+#######################################
+# CUSTOM ASSET GENERATOR DEMO REHBERİ #
+#######################################
+
+- "Custom Asset Generator/Plugins" klasörünü, "Assets/Plugins" dizinine taşı.
+  (Special Folders and Script Compilation Order: https://docs.unity3d.com/Manual/ScriptCompileOrderFolders.html)

@@ -6,11 +6,13 @@ using PixelCrushers.DialogueSystem;
 
 public class ShopScene : MonoBehaviour
 {
-    CanvasGroup cg;
+    public CanvasGroup cg, diag;
+    AlertTrigger at;
 
     private void Start()
     {
         cg = GetComponentInChildren<CanvasGroup>();
+        at = GetComponent<AlertTrigger>();
         DialogueLua.SetVariable("End", false);
     }
 
@@ -20,6 +22,10 @@ public class ShopScene : MonoBehaviour
         if (DialogueLua.GetVariable("End").AsBool)
         {
             cg.alpha -= .02f;
+            if (cg.alpha < .2f)
+            {
+                //at.enabled = true;
+            }
             if (cg.alpha == 0)
             {
                 DestroyObject(this.gameObject);

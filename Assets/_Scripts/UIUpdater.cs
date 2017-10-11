@@ -26,7 +26,6 @@ public class UIUpdater : MonoBehaviour
     {
         int current;
         int.TryParse(gold.text, out current);
-        print(current);
         int value;
         if (add)
         {
@@ -38,7 +37,6 @@ public class UIUpdater : MonoBehaviour
             value = current - increment;
             gold.text = value.ToString();
         }
-        print(value);
     }
 
     public void InvUpdate()

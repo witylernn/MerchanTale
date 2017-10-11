@@ -88,4 +88,30 @@ public class InventoryManager : MonoBehaviour
         }
         return poor;
     }
+
+    public int CheckItemAmount(int item)
+    {
+        int amount = 0;
+        for (int i = 0; i <inventory.Count; i++)
+        {
+            if (inventory[i].x == item)
+            {
+                amount = Mathf.RoundToInt(inventory[i].y);
+            }
+        }
+        return amount;
+    }
+
+    /*
+     Item List:
+     0 - Gold
+     1 - flower1
+     2 - flower2
+     3 - flower3
+     100 - spear tip
+     101 - spear handle
+     102 - spear(full)
+     
+     
+     */
 }

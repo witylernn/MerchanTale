@@ -1,0 +1,11 @@
+#############################################
+# CUSTOM ASSET GENERATOR GÜNCELLEME REHBERİ #
+#############################################
+
+* Referans: https://sametkurumahmut.github.io/CustomAssetGenerator/tr/details/#howToUpdate
+
+- "CustomAssetGenerator.update.xml" dosyasını oluşturmak için configuration asset' in önizleme ikonuna sağ tıkla ve "Export to update" menüsünü seç.
+- "CustomAssetGenerator.update.xml" hariç tüm Custom Asset Generator dosyalarını sil.
+- Yeni Custom Asset Generator sürümünü projeye aktar.
+- "Assets/Create/Custom Assets/Generate Config Asset" menü öğe yoluyla configuration asset' i oluştur.
+- "CustomAssetGenerator.update.xml" dosyasını configuration asset' e sürükle ve sürüm güncelleme alanına bırak.
