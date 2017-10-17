@@ -30,14 +30,14 @@ public class SaveLoad : MonoBehaviour
     public void Load()
     {
 
-        using(ES2Reader reader = ES2Reader.Create("Save.imp"))
-        {
-            TimeManager.month = reader.Read<int>();
-            TimeManager.day = reader.Read<int>();
-        }
+        //using(ES2Reader reader = ES2Reader.Create("Save.imp"))
+        //{
+        //    TimeManager.month = reader.Read<int>();
+        //    TimeManager.day = reader.Read<int>();
+        //}
 
-        InventoryManager.inventory = ES2.LoadList<Vector2>("SaveInv.imp");
-        ES3.Load<GameObject>("test");
+        //InventoryManager.inventory = ES2.LoadList<Vector2>("SaveInv.imp");
+        //ES3.Load<GameObject>("test");
 
     }
 }

@@ -76,6 +76,9 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="TestLibrary">
+      <HintPath>Assets\Custom Asset Generator\Demo\TestLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="DemiLib">
       <HintPath>Assets\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
     </Reference>
@@ -108,9 +111,6 @@
     </Reference>
     <Reference Include="TextMeshPro-1.0.55.2017.1.0b12">
       <HintPath>Assets\TextMesh Pro\Plugins\TextMeshPro-1.0.55.2017.1.0b12.dll</HintPath>
-    </Reference>
-    <Reference Include="TestLibrary">
-      <HintPath>Assets\Custom Asset Generator\Demo\TestLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

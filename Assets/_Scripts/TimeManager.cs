@@ -16,7 +16,6 @@ public class TimeManager : MonoBehaviour
 
     public void ProgressDay()
     {
-        print(month + "/" + day);
         if (day == 30)
         {
             if (month == 4 || month == 6 || month == 9 || month == 11)

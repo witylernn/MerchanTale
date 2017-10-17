@@ -49,21 +49,20 @@ public class UIUpdater : MonoBehaviour
                 {
                     if (child.GetComponent<Image>().sprite == null)
                     {
+                        child.GetComponent<Image>().enabled = true;
+                        child.GetComponentInChildren<TextMeshProUGUI>().text = "x" + item.y.ToString();
                         switch (Mathf.RoundToInt(item.x))
                         {
                             case 1:
                                 child.GetComponent<Image>().sprite = item1;
-                                child.GetComponentInChildren<TextMeshProUGUI>().text = "x" + item.y.ToString();
                                 break;
 
                             case 2:
                                 child.GetComponent<Image>().sprite = item2;
-                                child.GetComponentInChildren<TextMeshProUGUI>().text = "x" + item.y.ToString();
                                 break;
 
                             case 3:
                                 child.GetComponent<Image>().sprite = item3;
-                                child.GetComponentInChildren<TextMeshProUGUI>().text = "x" + item.y.ToString();
                                 break;
                         }
                         print(item.y);

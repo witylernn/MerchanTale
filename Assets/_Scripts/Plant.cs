@@ -11,6 +11,8 @@ public class Plant : MonoBehaviour
 
     private void Start()
     {
+        //PlantingManager.plantList.Add(this.gameObject);
+
         if (PlantingManager.plantList.Contains(this.gameObject))
         {
             print("do nothing");
