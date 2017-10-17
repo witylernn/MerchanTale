@@ -122,6 +122,8 @@
   <ItemGroup>
     <Compile Include="Assets\_Scripts\Blacksmith.cs" />
     <Compile Include="Assets\_Scripts\BlacksmithScene.cs" />
+    <Compile Include="Assets\_Scripts\Coins\Coin.cs" />
+    <Compile Include="Assets\_Scripts\Coins\CoinsManager.cs" />
     <Compile Include="Assets\_Scripts\DontDestroy.cs" />
     <Compile Include="Assets\_Scripts\InventoryManager.cs" />
     <Compile Include="Assets\_Scripts\Plant.cs" />
