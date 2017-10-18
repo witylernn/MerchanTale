@@ -6,11 +6,8 @@ public class CoinsManager : MonoBehaviour
 {
     public int maxX, maxY;
     public List<GameObject> coins;
+    public List<GameObject> toRemove;
     public Sprite coin1, coin2, coin3, coin4, coin5;
-    private void Start()
-    {
-        
-    }
 
     private void Update()
     {
@@ -23,7 +20,31 @@ public class CoinsManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            MatchCheck();
+            for (int i = 1; i <= maxY; i++)
+            {
+                print("checking row: " + i);
+                RowCheck(i);
+            }
+
+            for (int i = 1; i <= maxX; i++)
+            {
+                print("checking column: " + i);
+                ColumnCheck(i);
+            }
+
+            foreach (GameObject go in toRemove)
+            {
+                DestroyObject(go);
+            }
+            toRemove.Clear();
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            for (int i = 1; i <= maxY; i++)
+            {
+                FallCoins(i);
+            }
         }
     }
 
@@ -108,7 +129,7 @@ public class CoinsManager : MonoBehaviour
         return coin;
     }
 
-    void MatchCheck()
+    void RowCheck(int rowNum)
     {
         int startX = maxX;
         int startY = maxY;
@@ -119,12 +140,20 @@ public class CoinsManager : MonoBehaviour
 
         for(int x = 1; x <= maxX; x++)
         {
-            GameObject go = GetCoin(new Vector2(x, startY));
+            GameObject go = GetCoin(new Vector2(x, rowNum));
             row.Add(go);
         }
 
         foreach (GameObject coin in row)
         {
+
+            if(coin == null)
+            {
+                count = 1;
+                type = 0;
+                iteration++;
+                continue;
+            }
             if (type == 0)
             {
                 type = coin.GetComponent<Coin>().type;
@@ -141,14 +170,16 @@ public class CoinsManager : MonoBehaviour
 
                     for(int i = 0; i < count; i++)
                     {
-                        DestroyObject(row[iteration-1-i]);
+                        //DestroyObject(row[iteration-1-i]);
+						Debug.Log(row[iteration-1-i]);
+                        toRemove.Add(row[iteration-1-i]);
                     }
                 }
                 type = coin.GetComponent<Coin>().type;
                 count = 1;
             }
             
-            print("type: " + type + ", count: " + count);
+            //print("type: " + type + ", count: " + count);
             iteration++;
         }
 
@@ -157,15 +188,119 @@ public class CoinsManager : MonoBehaviour
 
             for (int i = 0; i < count; i++)
             {
-                DestroyObject(row[iteration - 1 - i]);
+                //DestroyObject(row[iteration - 1 - i]);
+                toRemove.Add(row[iteration - 1 - i]);
+
             }
         }
 
     }
 
-    void Matched()
+    void ColumnCheck(int colNum)
     {
+        int startX = maxX;
+        int startY = maxY;
+        int type = 0;
+        int count = 0;
+        int iteration = 0;
+        List<GameObject> col = new List<GameObject>();
 
+        for (int y = 1; y <= maxY; y++)
+        {
+            GameObject go = GetCoin(new Vector2(colNum, y));
+            col.Add(go);
+        }
+
+        foreach (GameObject coin in col)
+        {
+            if (coin == null)
+            {
+                count = 1;
+                type = 0;
+                iteration++;
+                continue;
+            }
+
+            if (type == 0)
+            {
+                type = coin.GetComponent<Coin>().type;
+                count++;
+            }
+            else if (type == coin.GetComponent<Coin>().type)
+            {
+                count++;
+            }
+            else if (type != coin.GetComponent<Coin>().type)
+            {
+                if (count >= 3)
+                {
+
+                    for (int i = 0; i < count; i++)
+                    {
+                        //DestroyObject(row[iteration-1-i]);
+
+                        toRemove.Add(col[iteration - 1 - i]);
+                    }
+                }
+                type = coin.GetComponent<Coin>().type;
+                count = 1;
+            }
+
+            //print("type: " + type + ", count: " + count);
+            iteration++;
+        }
+
+        if (count >= 3)
+        {
+
+            for (int i = 0; i < count; i++)
+            {
+                //DestroyObject(col[iteration - 1 - i]);
+                toRemove.Add(col[iteration - 1 - i]);
+            }
+        }
+    }
+
+    void FallCoins(int rowNum)
+    {
+        List<GameObject> row = new List<GameObject>();
+
+        for (int x = 1; x <= maxX; x++)
+        {
+            GameObject go = GetCoin(new Vector2(x, rowNum));
+            if (go == null)
+            {
+                VerticalDrop(new Vector2(x, rowNum));
+                //GameObject above = GetCoin(new Vector2(x, rowNum + 1));
+                //above.GetComponent<Transform>().position = new Vector2(x, rowNum);
+
+            }
+            row.Add(go);
+        }
+
+        //foreach (GameObject coin in row)
+        //{
+        //    Transform coinPos = coin.GetComponent<Transform>();
+        //    GameObject above = GetCoin(new Vector2(coinPos.position.x, coinPos.position.y+1));
+            
+        //    if (above == null)
+        //    {
+        //        print("yes!");
+        //    }
+        //}
+    }
+
+    void VerticalDrop(Vector2 coin)
+    {
+        for (int i = Mathf.RoundToInt(coin.y); i <= maxY; i++)
+        {
+            GameObject go = GetCoin(new Vector2(coin.x, i));
+            if(go != null)
+            {
+                go.transform.position = coin;
+                break;
+            }
+        }
     }
 
     void ListUpdate()
